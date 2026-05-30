@@ -12,6 +12,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+// Choqy Pananda Sirait - 12S24012
 public class App {
 
     static {
