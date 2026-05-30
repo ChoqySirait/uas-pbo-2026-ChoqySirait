@@ -20,8 +20,9 @@
             <property name="javax.persistence.jdbc.driver"
                       value="org.h2.Driver"/>
 
+            <!-- Database hanya hidup selama program berjalan -->
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:h2:./management-park"/>
+                      value="jdbc:h2:mem:parkdb"/>
 
             <property name="javax.persistence.jdbc.user"
                       value="sa"/>
@@ -32,8 +33,9 @@
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.H2Dialect"/>
 
+            <!-- Selalu buat database baru setiap run -->
             <property name="hibernate.hbm2ddl.auto"
-                      value="update"/>
+                      value="create-drop"/>
 
             <property name="hibernate.show_sql"
                       value="false"/>
